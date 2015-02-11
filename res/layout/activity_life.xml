@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/life_b" >
+    
+    <ScrollView 
+        android:layout_width="match_parent"
+    android:layout_height="match_parent">
+        <LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <TextView
+            android:id="@+id/index_city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="城市" 
+            android:textSize="30sp"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center_horizontal" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:background="@drawable/linearlayout_b"
+         >
+
+        <TextView
+            android:id="@+id/index_cloth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="穿衣指数" 
+            android:textSize="20sp"
+            android:layout_gravity="center_horizontal" />
+
+        <TextView
+            android:id="@+id/index_cloth_grade"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="★ 指数级别：热"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/index_cloth_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="★ 天气热，建议着短裙、短裤、短薄外套、T恤等夏季服装" 
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/linearlayout_b"
+        android:orientation="vertical"
+        android:padding="10dp" >
+
+        <TextView
+            android:id="@+id/index_train"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="晨练指数"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/index_train_grade"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="指数级别：热"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/index_train_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="天气热，建议着短裙、短裤、短薄外套、T恤等夏季服装"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+  <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:padding="10dp"
+        android:background="@drawable/linearlayout_b"
+         >
+
+        <TextView
+            android:id="@+id/index_comfortable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="舒适度指数" 
+            android:textSize="20sp"
+            android:layout_gravity="center_horizontal" />
+
+        <TextView
+            android:id="@+id/index_comfortable_grade"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="指数级别：热"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/index_comfortable_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="天气热，建议着短裙、短裤、短薄外套、T恤等夏季服装" 
+            android:textSize="20sp" />
+
+    </LinearLayout>
+  </LinearLayout>
+    </ScrollView>
+</LinearLayout>

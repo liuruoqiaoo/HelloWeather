@@ -1,0 +1,117 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/weather_b">
+
+     
+    <LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="#50ffffff"  
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="10dp" >
+
+        <Button
+            android:id="@+id/button_change"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/button_b"
+            android:text="切换城市" 
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:id="@+id/city_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/button_change"
+            android:layout_alignBottom="@+id/button_change"
+            android:layout_centerHorizontal="true"
+            android:text="广州"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/button_life"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/button_b"
+            android:text="天气指数"
+            android:layout_marginRight="10dp"  />
+
+    </RelativeLayout>
+
+    
+
+    <TextView
+        android:id="@+id/realtime_weather"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:text="24°"
+        android:textSize="60sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp" >
+
+        <TextView
+            android:id="@+id/realtime_humidity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:text="湿度24%"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/realtime_wind"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="东南风4级"
+            android:textSize="20sp" 
+             />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:text="2014年11月19日"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/realtime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20dp"
+        android:text="发布时间10：00"
+        android:textSize="20sp"/>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="0.5dp"
+        android:background="#70000000" />
+
+    <ListView
+        android:id="@+id/forecast_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="#70000000"
+        android:dividerHeight="0.5dp">
+    </ListView>
+    </LinearLayout>
+
+</LinearLayout>
